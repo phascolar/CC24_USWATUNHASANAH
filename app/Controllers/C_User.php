@@ -10,11 +10,13 @@ class C_User extends BaseController
 {
     public function __construct()
     {
-    helper() = [
-        'url', 'form','session'
-    ];
-    
-    $this->session = session();
+        helper([
+            'url', 'form','session'
+        ]);
+        
+        $this->session = session();
+
+        $this->product = new M_Product();
     }
 
     public function input()
@@ -29,10 +31,10 @@ class C_User extends BaseController
             'user_id' => $id,
             'name' => $name,
             'email' => $email,
-            'password' => . md5()$pass,
+            'password' => md5($pass),
             'address' => $address,
             'no_tlp' => $no,
-            'pin' => . mt_rand('10000', '99999999')$pin,
+            'pin' => $pin . mt_rand('10000', '99999999'),
         ]);
 
         return view('admin/user');
@@ -46,7 +48,7 @@ class C_User extends BaseController
         $address = $this->request->getPost('address');
         $no = $this->request->getPost('no_tlp');
         $this->username->update(
-            $id[
+            $id = [
             'user_id' => $id,
             'name' => $name,
             'email' => $email,
@@ -60,7 +62,8 @@ class C_User extends BaseController
 
     public function delete($id = null)
     {
-        $this->username->delete('username', $username)
+        $data['post'] = $this->product->delete('product_id', $id);
+
 
         return redirect()->to(base_url('aksiuser'));
     }

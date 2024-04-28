@@ -9,13 +9,14 @@ class C_Address extends BaseController
 {
     public function __construct()
     {
-    helper() = [
-        'url', 'form','session'
-    ];
-    
-    $this->session = session();
-    }
+        helper([
+            'url', 'form','session'
+        ]);
+        
+        $this->session = session();
 
+        $this->product = new M_Product();
+    }
     public function input()
     {
         $user_id = $this->request->getPost('user_id');
@@ -51,7 +52,7 @@ class C_Address extends BaseController
         $city = $this->request->getPost('city');
         $phone = $this->request->getPost('phone');
         $this->address->update(
-            $id[
+            $id = [
                 'user_id' => $user_id,
                 'name' => $name,
                 'email' => $email,
@@ -67,7 +68,7 @@ class C_Address extends BaseController
 
     public function delete($id = null)
     {
-        $this->address->delete('address', $address)
+        $this->address->delete('address', $address);
 
         return redirect()->to(base_url('aksiuser'));
     }

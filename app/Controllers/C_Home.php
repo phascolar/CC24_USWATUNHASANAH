@@ -3,21 +3,26 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\M_Product;
 
 class C_Home extends BaseController
 {
     public function __construct()
     {
-        $helper = [
+        helper([
             'url', 'form','session'
-        ];
+        ]);
+        
         $this->session = session();
-        $this->username->M_user();
+
+        $this->product = new M_Product();
     }
 
     public function index()
     {
         $data['title'] = 'Halaman utama';
+        $data['hasil'] = null;
+        $data['product'] = $this->product->findAll();
 
         return view('depan/home', $data);
     }
@@ -25,6 +30,8 @@ class C_Home extends BaseController
     public function product()
     {
         $data['title'] = 'product';
+        $data['hasil'] = null;
+        $data['product'] = $this->product->findAll();
 
         return view('depan/product', $data);
     }
@@ -32,7 +39,9 @@ class C_Home extends BaseController
     public function keranjang()
     {
         $data['title'] = 'keranjang';
-
+        $data['hasil'] = null;
+        $data['product'] = $this->product->findAll();
+        
         return view('depan/keranjang', $data);
     }
 
