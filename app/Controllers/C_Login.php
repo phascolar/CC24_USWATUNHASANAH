@@ -7,12 +7,24 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class CLogin extends BaseController
 {
+    public function __construct()
+    {
+        helper([
+            'url', 'form','session'
+        ]);
+        
+        $this->session = session();
+
+        $this->product = new M_Product();
+    }
+
     public function login()
     {
         if($this->session->sudahlogin == 1){
             return redirect()->to(base_url('admin'));
         }
         $data['title'] = 'login admin';
+        
         return view('depan/login', $data);
     }
 
@@ -50,10 +62,10 @@ class CLogin extends BaseController
             'user_id' => $id,
             'name' => $name,
             'email' => $email,
-            'password' => . md5()$pass,
+            'password' => md5($pass),
             'address' => $address,
             'no_tlp' => $no,
-            'pin' => . mt_rand('10000', '99999999')$pin,
+            'pin' => $pin . mt_rand('10000', '99999999'),
         ]);
 
         return view('depan/login');

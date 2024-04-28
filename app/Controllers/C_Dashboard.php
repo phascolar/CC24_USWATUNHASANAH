@@ -7,6 +7,17 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class CDashboard extends BaseController
 {
+    public function __construct()
+    {
+        helper([
+            'url', 'form','session'
+        ]);
+        
+        $this->session = session();
+
+        $this->product = new M_Product();
+    }
+    
     public function admin()
     {
         if($this->session->sudahlogin != 1){
