@@ -42,19 +42,53 @@
 
 
   <!-- detail -->
-  <div class="container">
+  <div class="container mt-5">
     <div class="row row-container">
       <div class="row">
-        <div class="col-lg-5">
-          <img src="" alt="" style="width: 100%;">
+        <div class="col-lg-5 p-2">
+          <img src="gambar/j1.jpg" alt="" style="width: 100%;">
         </div>
-        <div class="col-lg-5">
-          <h4>Sepatu Erigo Termurah Se Sidoarjo </h4>
+        <div class="col-lg-5 pt-3">
+          <h2 class="mb-3">Sepatu Erigo Termurah <br>Se Sidoarjo </h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque mollitia laborum dicta adipisci inventore incidunt quas eum magni eaque doloribus?</p>
+          <h5>Jumlah Produk: 145</h5>
+          <h4>Rp.150.000</h4>
+          <button  class="btn btn-dark d-grid mb-5 mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Chekout</button>
         </div>
+       
       </div>
 
     </div>
   </div>
+
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Chekout Barang</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="gambar/j1.jpg" alt="" style="width: 100%;">
+      <select class="form-select mt-2" aria-label="Default select example" style="width: 100px;">
+        <option selected>pilih Ukuran</option>
+        <option value="1">41</option>
+        <option value="2">42</option>
+        <option value="3">43</option>
+      </select>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cencel</button>
+        <button type="button" class="btn btn-dark">Bayar</button>
+      </div>
+    </div>
+  </div>
+</div>
  
 
   
