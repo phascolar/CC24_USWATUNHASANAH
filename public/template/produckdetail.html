@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shoping</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="bg-light">
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+        <img src="gambar/2.png" alt="Bootstrap" width="50" height="54">
+      <a class="navbar-brand m-2" href="#">Tok<strong>Line</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- akhirnav -->
+<!-- btn -->
+<div class="container mt-4">
+<div class="row  ">
+    <div class="col-12 p-2">
+<button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Tambah Produck</button>
+    </div>
+</div>
+</div>
+
+<div class="container mt-5 card rounded">
+    <div class="row shadow">
+      <div class="judul text-center pt-2">
+        <h4>Produk Anda</h4>
+      </div>
+      <div class="produk ">
+        <table class="table m-2">
+          <tbody>
+            <tr>
+              <td>Nama Produck</td>
+              <td>Sepatu Super</td>
+            </tr>
+            <tr>
+              <td>jumlah Stok Barang</td>
+              <td>120</td>
+            </tr>
+            <tr>
+              <td>Harga</td>
+              <td>Rp150.000</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td>Aktif</td>
+            </tr>
+            <tr>
+              <td>Menu</td>
+              <td>
+                <button class="btn btn-danger">Hapus</button>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-dark">Tambah</button>
+              </td>
+            </tr>
+            <img src="gambar/j2.jpg" alt="" class="p-3" style="width: 200px;">
+          </tbody>
+        </table>
+      </div>
+
+    
+    </div>
+</div>
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="bg-dark mt-5 p-2">
+    <p class="p-2 text-center text-light">Created By <svg xmlns="http://www.w3.org/2000/svg" class="text-danger" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+      </svg><a href="" class="text-light"> Arwaz</a></p><br>
+      
+</footer>
+  
+    <script src="js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>
