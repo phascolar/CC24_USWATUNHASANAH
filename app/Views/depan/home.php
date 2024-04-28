@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $title; ?></title>
-    <link href="<?= base_url('css/bootstrap.min.css')?>" rel="stylesheet">
+    <link href="<?= base_url('template/css/bootstrap.min.css')?>" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('template/css/style.css')?>">
   </head>
   <body>
@@ -120,9 +120,158 @@ foreach ($product as $prdk){
 }
 ?>
 
+<div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center mt-2">
+    <div class="card" >
+        <img src="<?= base_url("template/gambar/j1.jpg")?>" class="card-img-top" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">sepatu gosop</h5>
+          <p class="card-text">alhamdulillah</p>
+          <form action="<?= base_url("")?>">
+            <a href="" class="btn btn-dark d-grid">keranjang</a>
+          </form>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center mt-2">
+    <div class="card" >
+        <img src="<?= base_url("template/gambar/j2.jpg")?>" class="card-img-top" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">sepatu gosop</h5>
+          <p class="card-text">alhamdulillah</p>
+          <form action="<?= base_url("")?>">
+            <a href="" class="btn btn-dark d-grid">keranjang</a>
+          </form>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center mt-2">
+    <div class="card" >
+        <img src="<?= base_url("template/gambar/j3.jpg")?>" class="card-img-top" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">sepatu gosop</h5>
+          <p class="card-text">alhamdulillah</p>
+          <form action="<?= base_url("")?>">
+            <a href="" class="btn btn-dark d-grid">keranjang</a>
+          </form>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center mt-2">
+    <div class="card" >
+        <img src="<?= base_url("template/gambar/j4.jpg")?>" class="card-img-top" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">sepatu gosop</h5>
+          <p class="card-text">alhamdulillah</p>
+          <form action="<?= base_url("")?>">
+            <a href="" class="btn btn-dark d-grid">keranjang</a>
+          </form>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center mt-2">
+    <div class="card" >
+        <img src="<?= base_url("template/gambar/j5.jpg")?>" class="card-img-top" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">sepatu gosop</h5>
+          <p class="card-text">alhamdulillah</p>
+          <form action="<?= base_url("")?>">
+            <a href="" class="btn btn-dark d-grid">keranjang</a>
+          </form>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center mt-2">
+    <div class="card" >
+        <img src="<?= base_url("template/gambar/j6.jpg")?>" class="card-img-top" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">sepatu gosop</h5>
+          <p class="card-text">alhamdulillah</p>
+          <form action="<?= base_url("")?>">
+            <a href="" class="btn btn-dark d-grid">keranjang</a>
+          </form>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center mt-2">
+    <div class="card" >
+        <img src="<?= base_url("template/gambar/j7.jpg")?>" class="card-img-top" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">sepatu gosop</h5>
+          <p class="card-text">alhamdulillah</p>
+          <form action="<?= base_url("")?>">
+            <a href="" class="btn btn-dark d-grid">keranjang</a>
+          </form>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center mt-2">
+    <div class="card" >
+        <img src="<?= base_url("template/gambar/j8.jpeg")?>" class="card-img-top" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">sepatu gosop</h5>
+          <p class="card-text">alhamdulillah</p>
+          <form action="<?= base_url("")?>">
+            <a href="" class="btn btn-dark d-grid">keranjang</a>
+          </form>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center mt-2">
+    <div class="card" >
+        <img src="<?= base_url("template/gambar/j9.jpg")?>" class="card-img-top" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">sepatu gosop</h5>
+          <p class="card-text">alhamdulillah</p>
+          <form action="<?= base_url("")?>">
+            <a href="" class="btn btn-dark d-grid">keranjang</a>
+          </form>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center mt-2">
+    <div class="card" >
+        <img src="<?= base_url("template/gambar/j10.jpg")?>" class="card-img-top" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">sepatu gosop</h5>
+          <p class="card-text">alhamdulillah</p>
+          <form action="<?= base_url("")?>">
+            <a href="" class="btn btn-dark d-grid">keranjang</a>
+          </form>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center mt-2">
+    <div class="card" >
+        <img src="<?= base_url("template/gambar/j11.jpg")?>" class="card-img-top" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">sepatu gosop</h5>
+          <p class="card-text">alhamdulillah</p>
+          <form action="<?= base_url("")?>">
+            <a href="" class="btn btn-dark d-grid">keranjang</a>
+          </form>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center mt-2">
+    <div class="card" >
+        <img src="<?= base_url("template/gambar/j13.jpg")?>" class="card-img-top" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">sepatu gosop</h5>
+          <p class="card-text">alhamdulillah</p>
+          <form action="<?= base_url("")?>">
+            <a href="" class="btn btn-dark d-grid">keranjang</a>
+          </form>
+        </div>
+    </div>
+</div>
 
     </div>
 </div>
+<footer class="bg-dark mt-5 p-2">
+    <p class="p-2 text-center text-light">Created By <svg xmlns="http://www.w3.org/2000/svg" class="text-danger" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+      </svg><a href="" class="text-light"> Arwaz</a></p><br>
+</footer>
 <script src="<?= base_url('template/js/bootstrap.bundle.min.js')?>" ></script>
   </body>
 </html>

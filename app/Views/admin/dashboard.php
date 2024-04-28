@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shoping</title>
+    <link href="<?= base_url("template/css/bootstrap.min.css") ?>" rel="stylesheet">
+    <link rel="stylesheet" href="<?= base_url("template/") ?>css/style.css">
+  </head>
+  <body>
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+        <img src="gambar/2.png" alt="Bootstrap" width="50" height="54">
+      <a class="navbar-brand m-2" href="<?= base_url("template/") ?>#">Tok<strong>Line</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="<?= base_url("template/") ?>#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= base_url("template/") ?>#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= base_url("template/") ?>#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- akhirnav -->
+<!-- btn -->
+<div class="container mt-4">
+<div class="row row-container rounded">
+    <div class="col-12">
+<h4 class="text-center p-3">
+    Transaksi Terbaru
+</h4>
+    </div>
+</div>
+</div>
+
+<div class="container mt-5 card rounded">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  <footer class="bg-dark mt-5 p-2">
+    <p class="p-2 text-center text-light">Created By <svg xmlns="http://www.w3.org/2000/svg" class="text-danger" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+      </svg><a href="<?= base_url("template/") ?>" class="text-light"> Arwaz</a></p><br>
+      
+</footer>
+  
+    <script src="js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>
