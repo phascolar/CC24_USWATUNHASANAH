@@ -18,22 +18,24 @@ class CLogin extends BaseController
 
     public function aksi()
     {
-        // $user = $this->request->getVar('username');
-        // $pas = $this->request->getVar('pass_user');
-        // $data = $this->login->where('username', $user)->frist();
-        //     if($data){
-        //         $pass = md5('pass_user');
-        //         if($pass){
+        $user = $this->request->getVar('username');
+        $pas = $this->request->getVar('pass_user');
+        $data = $this->login->where('username', $user)->frist();
+            if($data){
+                $pass = md5('pass_user');
+                if($pass){
 
-        //         }
-        //     }
+                }
+            }
         
-        // return view('depan/login');
+        return view('depan/login', $data);
     }
 
     public function register()
     {
-        return view('depan/login');
+        $data['title'] = 'buat user';
+
+        return view('depan/login', $data);
     }
 
     public function action()
@@ -48,10 +50,10 @@ class CLogin extends BaseController
             'user_id' => $id,
             'name' => $name,
             'email' => $email,
-            // 'password' => . md5()$pass,
+            'password' => . md5()$pass,
             'address' => $address,
             'no_tlp' => $no,
-            // 'pin' => . mt_rand('10000', '99999999')$pin,
+            'pin' => . mt_rand('10000', '99999999')$pin,
         ]);
 
         return view('depan/login');
