@@ -35,9 +35,18 @@ class CLogin extends BaseController
         $data = $this->login->where('username', $user)->frist();
             if($data){
                 $pass = md5('pass_user');
-                if($pass){
-
+                if($pass = $pas){
+                    $ses_data = [
+                        'id' => $data['id'],
+                        'username' => $data['username'],
+                    ];
+                }else{
+                    $this->session()->setFlasdata('user', 'password anda salah');
+                    return redirect()->to(base_url('login'));
                 }
+            }else{
+                $this->session()->setFlasdata('pass', 'user anda tidak di ketahui');
+                    return redirect()->to(base_url('login'));
             }
         
         return view('depan/login', $data);
